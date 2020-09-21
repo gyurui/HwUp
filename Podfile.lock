@@ -1,16 +1,33 @@
 PODS:
   - Alamofire (5.2.2)
+  - AlamofireNetworkActivityIndicator (3.1.0):
+    - Alamofire (~> 5.1)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - AlamofireNetworkActivityIndicator (~> 3.1)
+  - PromiseKit (~> 6.8)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - PromiseKit
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  AlamofireNetworkActivityIndicator: 6564782bd7b9e6c430ae67d9277af01907b01ca4
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
 
-PODFILE CHECKSUM: 10cebad2e42e6cb92e220e23abddbab1650680e8
+PODFILE CHECKSUM: 08ece7da85f798b122e5f4a1c3c589cb1a24dd24
 
 COCOAPODS: 1.9.3

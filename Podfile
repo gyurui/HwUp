@@ -7,7 +7,9 @@ target 'HwUp' do
 
   # Pods for HwUp
   pod 'Alamofire', '~> 5.2'
-	
+  pod "PromiseKit", "~> 6.8"
+  pod 'AlamofireNetworkActivityIndicator', '~> 3.1'
+
   target 'HwUpTests' do
     inherit! :search_paths
     # Pods for testing

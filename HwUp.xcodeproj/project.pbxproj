@@ -10,12 +10,30 @@
 		0CDAB7B1B12457D0E90DE6EF /* Pods_HwUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5085CA5F6408F291AE362B91 /* Pods_HwUp.framework */; };
 		8CDDE9892514E64F00A5C216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9882514E64F00A5C216 /* AppDelegate.swift */; };
 		8CDDE98B2514E64F00A5C216 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE98A2514E64F00A5C216 /* SceneDelegate.swift */; };
-		8CDDE98D2514E64F00A5C216 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE98C2514E64F00A5C216 /* ViewController.swift */; };
+		8CDDE98D2514E64F00A5C216 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE98C2514E64F00A5C216 /* CardsViewController.swift */; };
 		8CDDE9902514E64F00A5C216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDDE98E2514E64F00A5C216 /* Main.storyboard */; };
 		8CDDE9922514E65500A5C216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDDE9912514E65500A5C216 /* Assets.xcassets */; };
 		8CDDE9952514E65500A5C216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDDE9932514E65500A5C216 /* LaunchScreen.storyboard */; };
 		8CDDE9A02514E65500A5C216 /* HwUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE99F2514E65500A5C216 /* HwUpTests.swift */; };
 		8CDDE9AB2514E65500A5C216 /* HwUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9AA2514E65500A5C216 /* HwUpUITests.swift */; };
+		8CDDE9BD2516097400A5C216 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CDDE9BC251603E900A5C216 /* Roboto-Bold.ttf */; };
+		8CDDE9BE2516097700A5C216 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CDDE9BA2516027700A5C216 /* Roboto-Regular.ttf */; };
+		8CDDE9BF2516097900A5C216 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CDDE9BB2516028100A5C216 /* Roboto-Medium.ttf */; };
+		8CDDE9C1251652B500A5C216 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDDE9C0251652B500A5C216 /* Colors.xcassets */; };
+		8CDDE9C82517552800A5C216 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9C72517552800A5C216 /* NetworkConstants.swift */; };
+		8CDDE9CB25175BAD00A5C216 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9CA25175BAD00A5C216 /* ApiRouter.swift */; };
+		8CDDE9CE25175E4800A5C216 /* Session+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9CD25175E4800A5C216 /* Session+Request.swift */; };
+		8CDDE9D025175E7700A5C216 /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9CF25175E7700A5C216 /* MyError.swift */; };
+		8CDDE9D525175F5F00A5C216 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9D425175F5F00A5C216 /* Card.swift */; };
+		8CDDE9DA25179F9400A5C216 /* AccountDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9D925179F9400A5C216 /* AccountDetails.swift */; };
+		8CDDE9DC2517AABF00A5C216 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9DB2517AABF00A5C216 /* LaunchViewController.swift */; };
+		8CDDE9E02517BDF000A5C216 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9DF2517BDF000A5C216 /* DataManager.swift */; };
+		8CDDE9E22517D73400A5C216 /* AssetsColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9E12517D73400A5C216 /* AssetsColors.swift */; };
+		8CDDE9E42517D77200A5C216 /* UIColor+AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9E32517D77200A5C216 /* UIColor+AppColor.swift */; };
+		8CDDE9E62517F09500A5C216 /* HwUpTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9E52517F09500A5C216 /* HwUpTabBarController.swift */; };
+		8CDDE9E82518104200A5C216 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9E72518104200A5C216 /* CardCollectionViewCell.swift */; };
+		8CDDE9EA2518B0A600A5C216 /* UIImage+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9E92518B0A600A5C216 /* UIImage+Rotate.swift */; };
+		8CDDE9EC2518B57800A5C216 /* CardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9EB2518B57700A5C216 /* CardNames.swift */; };
 		BEA1BD984E1D3BAFD71DC640 /* Pods_HwUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8310AE5D8594F488D772020A /* Pods_HwUpTests.framework */; };
 		CD7726AA5EC67A7EA51D87E1 /* Pods_HwUp_HwUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4869C7472E8EC3CC511AB792 /* Pods_HwUp_HwUpUITests.framework */; };
 /* End PBXBuildFile section */
@@ -48,7 +66,7 @@
 		8CDDE9852514E64F00A5C216 /* HwUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HwUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDDE9882514E64F00A5C216 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CDDE98A2514E64F00A5C216 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CDDE98C2514E64F00A5C216 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CDDE98C2514E64F00A5C216 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		8CDDE98F2514E64F00A5C216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CDDE9912514E65500A5C216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CDDE9942514E65500A5C216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +77,24 @@
 		8CDDE9A62514E65500A5C216 /* HwUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HwUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDDE9AA2514E65500A5C216 /* HwUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HwUpUITests.swift; sourceTree = "<group>"; };
 		8CDDE9AC2514E65500A5C216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CDDE9BA2516027700A5C216 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		8CDDE9BB2516028100A5C216 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		8CDDE9BC251603E900A5C216 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		8CDDE9C0251652B500A5C216 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8CDDE9C72517552800A5C216 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		8CDDE9CA25175BAD00A5C216 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		8CDDE9CD25175E4800A5C216 /* Session+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+Request.swift"; sourceTree = "<group>"; };
+		8CDDE9CF25175E7700A5C216 /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
+		8CDDE9D425175F5F00A5C216 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8CDDE9D925179F9400A5C216 /* AccountDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetails.swift; sourceTree = "<group>"; };
+		8CDDE9DB2517AABF00A5C216 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		8CDDE9DF2517BDF000A5C216 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8CDDE9E12517D73400A5C216 /* AssetsColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsColors.swift; sourceTree = "<group>"; };
+		8CDDE9E32517D77200A5C216 /* UIColor+AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColor.swift"; sourceTree = "<group>"; };
+		8CDDE9E52517F09500A5C216 /* HwUpTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HwUpTabBarController.swift; sourceTree = "<group>"; };
+		8CDDE9E72518104200A5C216 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		8CDDE9E92518B0A600A5C216 /* UIImage+Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Rotate.swift"; sourceTree = "<group>"; };
+		8CDDE9EB2518B57700A5C216 /* CardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNames.swift; sourceTree = "<group>"; };
 		9A55FB24A6D400BB65E72509 /* Pods-HwUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwUpTests.release.xcconfig"; path = "Target Support Files/Pods-HwUpTests/Pods-HwUpTests.release.xcconfig"; sourceTree = "<group>"; };
 		A58F760FC5694C1DE03FC1D8 /* Pods-HwUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwUp.release.xcconfig"; path = "Target Support Files/Pods-HwUp/Pods-HwUp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,13 +152,16 @@
 		8CDDE9872514E64F00A5C216 /* HwUp */ = {
 			isa = PBXGroup;
 			children = (
-				8CDDE9882514E64F00A5C216 /* AppDelegate.swift */,
-				8CDDE98A2514E64F00A5C216 /* SceneDelegate.swift */,
-				8CDDE98C2514E64F00A5C216 /* ViewController.swift */,
-				8CDDE98E2514E64F00A5C216 /* Main.storyboard */,
-				8CDDE9912514E65500A5C216 /* Assets.xcassets */,
-				8CDDE9932514E65500A5C216 /* LaunchScreen.storyboard */,
-				8CDDE9962514E65500A5C216 /* Info.plist */,
+				8CDDE9D325175F4D00A5C216 /* Models */,
+				8CDDE9CC25175E3200A5C216 /* Extensions */,
+				8CDDE9C92517575300A5C216 /* Router */,
+				8CDDE9C6251754D200A5C216 /* Application */,
+				8CDDE9C52517542400A5C216 /* Storyboards */,
+				8CDDE9C42517539800A5C216 /* Views */,
+				8CDDE9C32517538800A5C216 /* Controllers */,
+				8CDDE9C22517537A00A5C216 /* Constants */,
+				8CDDE9DE2517BDCC00A5C216 /* Managers */,
+				8CDDE9B8251601F800A5C216 /* Resources */,
 			);
 			path = HwUp;
 			sourceTree = "<group>";
@@ -143,6 +182,109 @@
 				8CDDE9AC2514E65500A5C216 /* Info.plist */,
 			);
 			path = HwUpUITests;
+			sourceTree = "<group>";
+		};
+		8CDDE9B8251601F800A5C216 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDE9C0251652B500A5C216 /* Colors.xcassets */,
+				8CDDE9912514E65500A5C216 /* Assets.xcassets */,
+				8CDDE9B92516026500A5C216 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8CDDE9B92516026500A5C216 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDE9BC251603E900A5C216 /* Roboto-Bold.ttf */,
+				8CDDE9BA2516027700A5C216 /* Roboto-Regular.ttf */,
+				8CDDE9BB2516028100A5C216 /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8CDDE9C22517537A00A5C216 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDE9C72517552800A5C216 /* NetworkConstants.swift */,
+				8CDDE9CF25175E7700A5C216 /* MyError.swift */,
+				8CDDE9E12517D73400A5C216 /* AssetsColors.swift */,
+				8CDDE9EB2518B57700A5C216 /* CardNames.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8CDDE9C32517538800A5C216 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDE98C2514E64F00A5C216 /* CardsViewController.swift */,
+				8CDDE9DB2517AABF00A5C216 /* LaunchViewController.swift */,
+				8CDDE9E52517F09500A5C216 /* HwUpTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8CDDE9C42517539800A5C216 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDE9E72518104200A5C216 /* CardCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8CDDE9C52517542400A5C216 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDE9932514E65500A5C216 /* LaunchScreen.storyboard */,
+				8CDDE98E2514E64F00A5C216 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8CDDE9C6251754D200A5C216 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDE9882514E64F00A5C216 /* AppDelegate.swift */,
+				8CDDE98A2514E64F00A5C216 /* SceneDelegate.swift */,
+				8CDDE9962514E65500A5C216 /* Info.plist */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		8CDDE9C92517575300A5C216 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDE9CA25175BAD00A5C216 /* ApiRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8CDDE9CC25175E3200A5C216 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDE9CD25175E4800A5C216 /* Session+Request.swift */,
+				8CDDE9E32517D77200A5C216 /* UIColor+AppColor.swift */,
+				8CDDE9E92518B0A600A5C216 /* UIImage+Rotate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8CDDE9D325175F4D00A5C216 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDE9D425175F5F00A5C216 /* Card.swift */,
+				8CDDE9D925179F9400A5C216 /* AccountDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CDDE9DE2517BDCC00A5C216 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDE9DF2517BDF000A5C216 /* DataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		A8D85B9D69CD24692485D332 /* Pods */ = {
@@ -279,7 +421,11 @@
 			files = (
 				8CDDE9952514E65500A5C216 /* LaunchScreen.storyboard in Resources */,
 				8CDDE9922514E65500A5C216 /* Assets.xcassets in Resources */,
+				8CDDE9BF2516097900A5C216 /* Roboto-Medium.ttf in Resources */,
+				8CDDE9BE2516097700A5C216 /* Roboto-Regular.ttf in Resources */,
+				8CDDE9BD2516097400A5C216 /* Roboto-Bold.ttf in Resources */,
 				8CDDE9902514E64F00A5C216 /* Main.storyboard in Resources */,
+				8CDDE9C1251652B500A5C216 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,9 +553,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CDDE98D2514E64F00A5C216 /* ViewController.swift in Sources */,
+				8CDDE98D2514E64F00A5C216 /* CardsViewController.swift in Sources */,
+				8CDDE9E42517D77200A5C216 /* UIColor+AppColor.swift in Sources */,
+				8CDDE9DC2517AABF00A5C216 /* LaunchViewController.swift in Sources */,
+				8CDDE9E22517D73400A5C216 /* AssetsColors.swift in Sources */,
+				8CDDE9D025175E7700A5C216 /* MyError.swift in Sources */,
+				8CDDE9DA25179F9400A5C216 /* AccountDetails.swift in Sources */,
+				8CDDE9C82517552800A5C216 /* NetworkConstants.swift in Sources */,
+				8CDDE9D525175F5F00A5C216 /* Card.swift in Sources */,
+				8CDDE9CB25175BAD00A5C216 /* ApiRouter.swift in Sources */,
+				8CDDE9CE25175E4800A5C216 /* Session+Request.swift in Sources */,
+				8CDDE9EA2518B0A600A5C216 /* UIImage+Rotate.swift in Sources */,
+				8CDDE9E02517BDF000A5C216 /* DataManager.swift in Sources */,
+				8CDDE9EC2518B57800A5C216 /* CardNames.swift in Sources */,
 				8CDDE9892514E64F00A5C216 /* AppDelegate.swift in Sources */,
 				8CDDE98B2514E64F00A5C216 /* SceneDelegate.swift in Sources */,
+				8CDDE9E82518104200A5C216 /* CardCollectionViewCell.swift in Sources */,
+				8CDDE9E62517F09500A5C216 /* HwUpTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
