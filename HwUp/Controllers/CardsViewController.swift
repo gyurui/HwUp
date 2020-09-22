@@ -16,14 +16,23 @@ class CardsViewController: UIViewController {
 
     @IBOutlet weak var cardCollectionView: UICollectionView!
     @IBOutlet weak var cardsPageControll: UIPageControl!
-
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var prevButton: UIButton!
 
-    private let cards = DataManager.cards
+    @IBOutlet weak var availableProgressBar: AvailableHorizontalProgressBar!
 
+    @IBOutlet weak var alertImageView: UIImageView!
+    @IBOutlet weak var availableMoneyLabel: UILabel!
+
+    @IBOutlet weak var informationTableView: UITableView!
+
+    @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
+
+    @IBOutlet weak var detailsButton: UIButton!
+
+    private let cards = DataManager.cards
     private var cellSize: CGSize = CGSize()
-    private var indexPath: IndexPath = IndexPath(row: 0, section: 0)
+    private var items: [CardDetailsItem] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,23 +56,64 @@ class CardsViewController: UIViewController {
         cardCollectionView.dataSource = self
 
         cellSize = CGSize.init(
-            width: cardCollectionView.frame.size.width,
-            height: cardCollectionView.frame.size.height
+            width: self.view.frame.size.width,
+            height: self.cardCollectionView.frame.size.height
         )
 
         cardCollectionView.reloadData()
+        cardCollectionView.setNeedsLayout()
 
         cardsPageControll.hidesForSinglePage = true
         cardsPageControll.numberOfPages = cards.count
         cardsPageControll.isEnabled = false
 
-        setChoosedCardIndex(index: DataManager.choosedCardIndex)
+        alertImageView.image = UIImage.init(named: "alert")?.withTintColor(
+            UIColor.appColor(.errorRed)!
+        )
+
+        informationTableView.register(
+            UINib(nibName: "InformationCell", bundle: nil),
+            forCellReuseIdentifier: "InformationCell"
+        )
+        informationTableView.delegate = self
+        informationTableView.dataSource = self
+
+        detailsButton.layer.borderColor = UIColor.appColor(.secondaryBlue)?.cgColor
+        detailsButton.layer.borderWidth = 1
+        detailsButton.layer.cornerRadius = 4
+
+        reloadPage()
     }
 
-    private func setChoosedCardIndex(index: Int) {
-        DataManager.choosedCardIndex = index
+    private func reloadPage() {
+        let index = DataManager.choosedCardIndex
+
         cardsPageControll
             .currentPage = index
+
+        headerTitleLabel.text = cards[index].friendlyName
+
+        prevButton.isHidden = index == 0
+        nextButton.isHidden = index == cards.count - 1
+
+        availableMoneyLabel.text = cards[index].availableBalance.formatFloatToString()
+        availableProgressBar.progress = CGFloat(
+            cards[index].availableBalance
+                / (cards[index].currentBalance + cards[index].availableBalance)
+        )
+
+        alertImageView.isHidden = cards[index].availableBalance > 0.0
+        availableMoneyLabel.textColor =
+            cards[index].availableBalance > 0.0
+            ? UIColor.appColor(.statusBlue) : UIColor.appColor(.errorRed)
+
+        let cellHeight = 48
+
+        items = generateCardDetailItems()
+
+        tableViewHeight.constant = CGFloat(items.count * cellHeight)
+
+        informationTableView.reloadData()
     }
 
     private func scrollTo(index: Int) {
@@ -76,12 +126,36 @@ class CardsViewController: UIViewController {
         }
     }
 
+    func generateCardDetailItems() -> [CardDetailsItem] {
+        let card = cards[DataManager.choosedCardIndex]
+        let currentBalance = CardDetailsItem(
+            labelName: "Current balance",
+            isShowCurrency: true,
+            value: card.currentBalance.formatFloatToString()
+        )
+        let minPayment = CardDetailsItem(
+            labelName: "Min. payment",
+            isShowCurrency: true,
+            value: card.minPayment.formatFloatToString()
+        )
+        let dueDate = CardDetailsItem(
+            labelName: "Due date",
+            isShowCurrency: false,
+            value: card.dueDate.formatDate()
+        )
+        return [currentBalance, minPayment, dueDate]
+    }
+
     @IBAction func prevButtonDidTouch(_ sender: Any) {
         scrollTo(index: DataManager.choosedCardIndex - 1)
     }
 
     @IBAction func nextButtonDidTouch(_ sender: Any) {
         scrollTo(index: DataManager.choosedCardIndex + 1)
+    }
+
+    @IBAction func detailsButtonDidTouch(_ sender: Any) {
+        tabBarController?.selectedIndex = 1
     }
 
 }
@@ -144,7 +218,34 @@ extension CardsViewController: UICollectionViewDelegate, UICollectionViewDataSou
         let width = scrollView.frame.width
         let horizontalCenter = width / 2
 
-        setChoosedCardIndex(index: Int(offSet + horizontalCenter) / Int(width))
+        let newIndex = Int(offSet + horizontalCenter) / Int(width)
+        if newIndex != DataManager.choosedCardIndex {
+            DataManager.choosedCardIndex = newIndex
+            reloadPage()
+        }
+    }
+}
+
+extension CardsViewController: UITableViewDelegate, UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
     }
 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell =
+            tableView.dequeueReusableCell(withIdentifier: "InformationCell", for: indexPath)
+            as! InformationCell
+
+        cell.nameLabel.text = items[indexPath.row].labelName
+        cell.currencyLabel.text = cards[DataManager.choosedCardIndex].currency
+        cell.currencyLabel.isHidden = !items[indexPath.row].isShowCurrency
+        cell.valueLabel.text = items[indexPath.row].value
+
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 48
+    }
 }

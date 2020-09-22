@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0CDAB7B1B12457D0E90DE6EF /* Pods_HwUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5085CA5F6408F291AE362B91 /* Pods_HwUp.framework */; };
+		8C4222DA2518D4F80062FD54 /* AvailableHorizontalProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4222D92518D4F80062FD54 /* AvailableHorizontalProgressBar.swift */; };
+		8C4222DE2518EFBC0062FD54 /* InformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4222DD2518EFBC0062FD54 /* InformationCell.swift */; };
+		8C4222E02518F71F0062FD54 /* InformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C4222DF2518F71F0062FD54 /* InformationCell.xib */; };
+		8C4222E225190CFE0062FD54 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4222E125190CFE0062FD54 /* DetailsViewController.swift */; };
+		8C4222E4251928BC0062FD54 /* DetailsHorizontalBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4222E3251928BC0062FD54 /* DetailsHorizontalBar.swift */; };
+		8CA7CBA4251947A400145997 /* CardDetailsItem .swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA7CBA3251947A400145997 /* CardDetailsItem .swift */; };
+		8CA7CBB12519AD9500145997 /* Float+ToFormattedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA7CBB02519AD9500145997 /* Float+ToFormattedString.swift */; };
+		8CA7CBB32519B5EC00145997 /* String+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA7CBB22519B5EC00145997 /* String+DateFormat.swift */; };
 		8CDDE9892514E64F00A5C216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE9882514E64F00A5C216 /* AppDelegate.swift */; };
 		8CDDE98B2514E64F00A5C216 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE98A2514E64F00A5C216 /* SceneDelegate.swift */; };
 		8CDDE98D2514E64F00A5C216 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDE98C2514E64F00A5C216 /* CardsViewController.swift */; };
@@ -63,6 +71,14 @@
 		77BACD9B8DBE8FCFB72BAB89 /* Pods-HwUp-HwUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwUp-HwUpUITests.release.xcconfig"; path = "Target Support Files/Pods-HwUp-HwUpUITests/Pods-HwUp-HwUpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8310AE5D8594F488D772020A /* Pods_HwUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HwUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D3F875812BDBC53E161C6B /* Pods-HwUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HwUp.debug.xcconfig"; path = "Target Support Files/Pods-HwUp/Pods-HwUp.debug.xcconfig"; sourceTree = "<group>"; };
+		8C4222D92518D4F80062FD54 /* AvailableHorizontalProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableHorizontalProgressBar.swift; sourceTree = "<group>"; };
+		8C4222DD2518EFBC0062FD54 /* InformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationCell.swift; sourceTree = "<group>"; };
+		8C4222DF2518F71F0062FD54 /* InformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationCell.xib; sourceTree = "<group>"; };
+		8C4222E125190CFE0062FD54 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		8C4222E3251928BC0062FD54 /* DetailsHorizontalBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHorizontalBar.swift; sourceTree = "<group>"; };
+		8CA7CBA3251947A400145997 /* CardDetailsItem .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardDetailsItem .swift"; sourceTree = "<group>"; };
+		8CA7CBB02519AD9500145997 /* Float+ToFormattedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+ToFormattedString.swift"; sourceTree = "<group>"; };
+		8CA7CBB22519B5EC00145997 /* String+DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DateFormat.swift"; sourceTree = "<group>"; };
 		8CDDE9852514E64F00A5C216 /* HwUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HwUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDDE9882514E64F00A5C216 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CDDE98A2514E64F00A5C216 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +237,7 @@
 				8CDDE98C2514E64F00A5C216 /* CardsViewController.swift */,
 				8CDDE9DB2517AABF00A5C216 /* LaunchViewController.swift */,
 				8CDDE9E52517F09500A5C216 /* HwUpTabBarController.swift */,
+				8C4222E125190CFE0062FD54 /* DetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,6 +246,10 @@
 			isa = PBXGroup;
 			children = (
 				8CDDE9E72518104200A5C216 /* CardCollectionViewCell.swift */,
+				8C4222D92518D4F80062FD54 /* AvailableHorizontalProgressBar.swift */,
+				8C4222DD2518EFBC0062FD54 /* InformationCell.swift */,
+				8C4222DF2518F71F0062FD54 /* InformationCell.xib */,
+				8C4222E3251928BC0062FD54 /* DetailsHorizontalBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,6 +287,8 @@
 				8CDDE9CD25175E4800A5C216 /* Session+Request.swift */,
 				8CDDE9E32517D77200A5C216 /* UIColor+AppColor.swift */,
 				8CDDE9E92518B0A600A5C216 /* UIImage+Rotate.swift */,
+				8CA7CBB02519AD9500145997 /* Float+ToFormattedString.swift */,
+				8CA7CBB22519B5EC00145997 /* String+DateFormat.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -275,6 +298,7 @@
 			children = (
 				8CDDE9D425175F5F00A5C216 /* Card.swift */,
 				8CDDE9D925179F9400A5C216 /* AccountDetails.swift */,
+				8CA7CBA3251947A400145997 /* CardDetailsItem .swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -421,6 +445,7 @@
 			files = (
 				8CDDE9952514E65500A5C216 /* LaunchScreen.storyboard in Resources */,
 				8CDDE9922514E65500A5C216 /* Assets.xcassets in Resources */,
+				8C4222E02518F71F0062FD54 /* InformationCell.xib in Resources */,
 				8CDDE9BF2516097900A5C216 /* Roboto-Medium.ttf in Resources */,
 				8CDDE9BE2516097700A5C216 /* Roboto-Regular.ttf in Resources */,
 				8CDDE9BD2516097400A5C216 /* Roboto-Bold.ttf in Resources */,
@@ -555,21 +580,28 @@
 			files = (
 				8CDDE98D2514E64F00A5C216 /* CardsViewController.swift in Sources */,
 				8CDDE9E42517D77200A5C216 /* UIColor+AppColor.swift in Sources */,
+				8C4222DA2518D4F80062FD54 /* AvailableHorizontalProgressBar.swift in Sources */,
 				8CDDE9DC2517AABF00A5C216 /* LaunchViewController.swift in Sources */,
+				8CA7CBB32519B5EC00145997 /* String+DateFormat.swift in Sources */,
 				8CDDE9E22517D73400A5C216 /* AssetsColors.swift in Sources */,
 				8CDDE9D025175E7700A5C216 /* MyError.swift in Sources */,
 				8CDDE9DA25179F9400A5C216 /* AccountDetails.swift in Sources */,
 				8CDDE9C82517552800A5C216 /* NetworkConstants.swift in Sources */,
 				8CDDE9D525175F5F00A5C216 /* Card.swift in Sources */,
+				8CA7CBB12519AD9500145997 /* Float+ToFormattedString.swift in Sources */,
 				8CDDE9CB25175BAD00A5C216 /* ApiRouter.swift in Sources */,
 				8CDDE9CE25175E4800A5C216 /* Session+Request.swift in Sources */,
 				8CDDE9EA2518B0A600A5C216 /* UIImage+Rotate.swift in Sources */,
 				8CDDE9E02517BDF000A5C216 /* DataManager.swift in Sources */,
+				8CA7CBA4251947A400145997 /* CardDetailsItem .swift in Sources */,
 				8CDDE9EC2518B57800A5C216 /* CardNames.swift in Sources */,
 				8CDDE9892514E64F00A5C216 /* AppDelegate.swift in Sources */,
+				8C4222DE2518EFBC0062FD54 /* InformationCell.swift in Sources */,
 				8CDDE98B2514E64F00A5C216 /* SceneDelegate.swift in Sources */,
 				8CDDE9E82518104200A5C216 /* CardCollectionViewCell.swift in Sources */,
 				8CDDE9E62517F09500A5C216 /* HwUpTabBarController.swift in Sources */,
+				8C4222E225190CFE0062FD54 /* DetailsViewController.swift in Sources */,
+				8C4222E4251928BC0062FD54 /* DetailsHorizontalBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

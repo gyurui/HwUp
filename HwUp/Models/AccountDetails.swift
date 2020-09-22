@@ -9,7 +9,7 @@
 import Foundation
 
 public struct AccountDetails {
-    public let accountLimit: Int
+    public let accountLimit: Float
     public let accountNumber: String
 }
 

@@ -19,13 +19,13 @@ public struct Card {
     public let friendlyName: String
     public let currency: String
     public let cvv: String
-    public let availableBalance: Int
-    public let currentBalance: Int
-    public let minPayment: Int
+    public let availableBalance: Float
+    public let currentBalance: Float
+    public let minPayment: Float
     public let dueDate: String
-    public let reservations: Int
-    public let balanceCarriedOverFromLastStatement: Int
-    public let spendingsSinceLastStatement: Int
+    public let reservations: Float
+    public let balanceCarriedOverFromLastStatement: Float
+    public let spendingsSinceLastStatement: Float
     public let accountDetails: AccountDetails
     public let yourLastRepayment: String
     public let status: String
